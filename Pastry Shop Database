@@ -1,0 +1,36 @@
+/** Pastry items:
+Croissant (20)
+Streudel (15)
+Scone (20)
+Puff (20)
+Cupcake (15)
+Cake (15)
+Hearts (15)
+Brownie (20)
+Ice Cream (40)
+Tiramisu (30)
+Macaron (30)
+Coffee (50)
+Tea (50)
+Milk (35)
+Water (60)
+**/
+CREATE TABLE Dannys_Pastries (id INTEGER PRIMARY KEY, name TEXT, quantity_per_shift INTEGER, price INTEGER, customer_rating INTEGER);
+INSERT INTO Dannys_Pastries VALUES (1, "Croissant", 20, 3, 6);
+INSERT INTO Dannys_Pastries VALUES (2, "Streudel", 15, 4, 7);
+INSERT INTO Dannys_Pastries VALUES (3, "Scone", 20, 3, 5);
+INSERT INTO Dannys_Pastries VALUES (4, "Puff", 20, 2, 6);
+INSERT INTO Dannys_Pastries VALUES (5, "Cupcake", 15, 4, 7);
+INSERT INTO Dannys_Pastries VALUES (6, "Cake", 15, 3, 8);
+INSERT INTO Dannys_Pastries VALUES (7, "Hearts", 15, 3, 9);
+INSERT INTO Dannys_Pastries VALUES (8, "Brownie", 20, 3, 9);
+INSERT INTO Dannys_Pastries VALUES (9, "Ice Cream", 40, 3, 8);
+INSERT INTO Dannys_Pastries VALUES (10, "Tiramisu", 30, 4, 9);
+INSERT INTO Dannys_PAstries VALUES (11, "Macaron", 30, 3, 8);
+INSERT INTO Dannys_PAstries VALUES (12, "Coffee", 50, 4, 9);
+INSERT INTO Dannys_Pastries VALUES (13, "Tea", 50, 3, 8);
+INSERT INTO Dannys_Pastries VALUES (14, "Milk", 35, 2, 6);
+INSERT INTO Dannys_Pastries VALUES (15, "Water", 60, 2, 5);
+SELECT name, price FROM Dannys_Pastries ORDER BY price;
+SELECT SUM(quantity_per_shift) FROM Dannys_Pastries;
+/*Customers come in and ask about our freshly made Tiramisu at least 10 times a day*/
